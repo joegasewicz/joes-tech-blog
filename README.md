@@ -2,6 +2,7 @@
 My tech blog that also showcases the [Bobtail](https://github.com/joegasewicz/bobtail) http framework.
 
 ### Techstack
+This project uses Python, Javascript & Sass languages.
 - [Bobtail](https://github.com/joegasewicz/bobtail/)
 - [SQLAlchemy](https://www.sqlalchemy.org/)
 - [Marshmallow](https://marshmallow.readthedocs.io/en/stable/)
