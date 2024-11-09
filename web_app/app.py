@@ -12,7 +12,13 @@ from bobtail_jinja2 import BobtailJinja2
 
 
 class Options(BaseOptions):
-    pass
+    STATIC_DIR = "static"
+
+
+class Static:
+
+    def get(self, req: Request, res: Response) -> None:
+        res.set_static(req.path)
 
 
 class Home:
@@ -29,6 +35,7 @@ class Home:
 
 
 routes = [
+    (Static(), "/static/*"),
     (Home(), "/"),
 ]
 
