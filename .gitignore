@@ -1,0 +1,28 @@
+.idea
+*/.idea
+*/*/cmake-build-debug
+main_app/js
+main_app/nottoboard/static/
+scripts/ssh
+.idea/
+.vscode/
+*/node_modules/
+*/__pycache__/
+__pycache__/
+
+
+
+*/*.log
+*/dist
+*/**.pyc
+*/__pycache__/*
+*/static
+# local static files
+*/staticfiles
+*/static/js
+# db
+consoller_vol
+
+*/*/static/js/
+*/*/static/css/
+

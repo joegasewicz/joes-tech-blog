@@ -1,0 +1,22 @@
+services:
+
+  forestmq:
+    restart: always
+    image: "bandnoticeboard/forestmq:0.5.0"
+    ports:
+      - "8005:8005"
+
+  postgres:
+    restart: always
+    image: "postgres:latest"
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=blog_db
+    volumes:
+      - ./consoller_vol/:/var/lib/postgresql/data
+
+volumes:
+  static:
