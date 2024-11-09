@@ -10,8 +10,14 @@ bobtail-cors = "*"
 bobtail-logger = "*"
 bobtail-upload = "*"
 bobtail-jinja2 = "*"
+psycopg2-binary = "*"
+sqlalchemy = "*"
+alembic = "*"
+marshmallow = "*"
 
 [dev-packages]
+pytest = "*"
+pylint = "*"
 
 [requires]
 python_version = "3.13"

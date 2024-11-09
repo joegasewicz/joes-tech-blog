@@ -3,6 +3,7 @@ from bobtail import (
     Response,
 )
 
+
 class Home:
 
     def get(self, req: Request, res: Response):
@@ -12,5 +13,6 @@ class Home:
         data = {
             "title": "Welcome To Joe's Tech Blog",
             "h1": "Welcome To Joe's Tech Blog",
+            "h2": "WIP call back soon!",
         }
         res.jinja2.render(res, "routes/home.jinja2", data=data)
