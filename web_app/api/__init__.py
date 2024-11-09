@@ -33,6 +33,5 @@ def create_app() -> BobTail:
     app.use(BobtailUpload())
     app.use(BobtailJinja2(template_dir="api/templates"))
     # database
-    from api.models.articles import Article
     Base.metadata.create_all(init_db())
     return app
